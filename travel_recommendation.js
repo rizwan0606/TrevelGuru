@@ -6,7 +6,7 @@ const search = () => {
       return;
     }
   
-    fetch("travelrecommendation.json")
+    fetch("travel_recommendation.json")
       .then((res) => {
         if (!res.ok) throw new Error("Failed to load JSON");
         return res.json();
